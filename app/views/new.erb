@@ -10,13 +10,13 @@
     <form action="/TVShows" method="post">
 
      <label for="title">Title:</label><br>
-     <input type="text" id="title" name="title" required><br>
+     <input type="text" id="title" name="title" ><br>
 
      <label for="network">Network:</label><br>
-     <input type="text" id="network" name="network" required><br>
+     <input type="text" id="network" name="network" ><br>
 
      <label for="starting_year">Starting Year:</label><br>
-     <input type="text" id="starting_year" name="starting_year" required><br>
+     <input type="text" id="starting_year" name="starting_year" ><br>
 
      <label for="genre">Genre:</label><br>
      <select name="genre">
@@ -28,9 +28,13 @@
     </select><br><br>
 
      <label for="synopsis">Synopsis:</label><br>
-     <input type="text" id="synopsis" name="synopsis" required><br>
+     <input type="text" id="synopsis" name="synopsis"><br>
 
      <input type="submit" value="Add TV Show">
-    </form>
+   </form><br>
+
+    <% if @not_filled %>
+      Please fill in all  fields!
+      <% end %>
   </body>
 </html>

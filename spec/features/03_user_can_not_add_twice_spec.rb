@@ -18,7 +18,7 @@ feature "user tries to add a show already on the list and receives error message
     fill_in "Network", with: "NBC"
     fill_in "Starting Year", with: "1994"
     fill_in "Synopsis", with: "Six friends living in New York city."
-    select "Comedy", from: "Genre"
+    select "Comedy", from: "genre"
 
     click_button "Add TV Show"
 
@@ -28,7 +28,7 @@ feature "user tries to add a show already on the list and receives error message
     fill_in "Network", with: "NBC"
     fill_in "Starting Year", with: "1994"
     fill_in "Synopsis", with: "Six friends living in New York city."
-    select "Comedy", from: "Genre"
+    select "Comedy", from: "genre"
 
     click_button "Add TV Show"
 
