@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>List of Shows</title>
+  </head>
+
+  <body>
+    <h1>List of Shows</h1>
+
+    <ol>
+      <% @shows.each do |show| %>
+        <li><%=show[:title]%> (<%=show[:network]%>)<br>
+        <%=show[:starting_year]%>, <%=show[:genre]%><br>
+        <%=show[:synopsis]%><br>
+      </li><br>
+      <% end %>
+    </ol>
+  </body>
+</html>
